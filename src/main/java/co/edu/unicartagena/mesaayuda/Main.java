@@ -14,6 +14,9 @@ public class Main {
         System.out.println("=== Mesa de ayuda TI: sistema de tickets ===");
         boolean continuar = true;
         while (continuar) {
+            if (!entrada.hasNextLine()) {
+                break;
+            }
             mostrarMenu();
             int opcion = leerEntero("Seleccione una opcion: ");
             try {
