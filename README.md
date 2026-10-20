@@ -1,6 +1,17 @@
-# Sistema de tickets - Mesa de ayuda TI
+# Sistema de Tickets para Mesa de Ayuda TI
 
-Ejercicio 6 de la actividad **Sistema de gestión con Lista, Cola y Pila**. Es una aplicación de consola en Java 17 para registrar tickets de una mesa de ayuda, atenderlos en orden de llegada, guardar los procesados y permitir deshacer el último procesamiento.
+[Repositorio en GitHub](https://github.com/rcarmonan-commits/mesa-ayuda-ti)
+
+Actividad: **Sistema de gestión con Lista, Cola y Pila**
+
+**Asignatura:** Estructuras de Datos  
+**Programa:** Ingeniería de Software  
+**IES:** Universidad de Cartagena  
+**Docente Tutor:** John Carlos Arrieta Arrieta  
+**Estudiante:** Rosary Eilyn Carmona Navarro  
+**Ejercicio Asignado:** Ejercicio 6 - Sistema de tickets para mesa de ayuda TI
+
+Es una aplicación de consola en Java 17 para registrar tickets de una mesa de ayuda, atenderlos en orden de llegada, guardar los procesados y permitir deshacer el último procesamiento.
 
 Las tres estructuras son implementaciones propias enlazadas; el proyecto no sustituye la lista, la cola ni la pila por colecciones de Java.
 
@@ -97,4 +108,4 @@ git merge desarrollo-ejercicio
 git push origin main
 ```
 
-GitHub requiere iniciar sesión y crear el repositorio remoto con la cuenta del estudiante. La URL del video de sustentación y los datos personales para la portada del informe se agregan cuando estén disponibles; no se inventan en este proyecto.
+GitHub requiere iniciar sesión con la cuenta del estudiante. La URL del video de sustentación se agregará cuando esté disponible.
