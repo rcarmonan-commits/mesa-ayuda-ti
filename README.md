@@ -83,29 +83,38 @@ Al deshacer un procesamiento, el ticket se agrega al final de la cola de pendien
 - Orden FIFO de la cola y LIFO de la pila.
 - Registro y busqueda de tickets, duplicados, procesamiento, deshacer, cancelacion con cola auxiliar y operaciones invalidas.
 
-## Historial de desarrollo
+## Paso 5: Implementación del control de versiones con Git
 
-El trabajo se realiza en la rama `desarrollo-ejercicio`, con commits separados por avances reales y mensajes descriptivos. No se cambian las fechas de los commits para simular trabajo previo. Al terminar, se integrara la rama en `main`.
+El código de la actividad se encuentra en el repositorio público [mesa-ayuda-ti](https://github.com/rcarmonan-commits/mesa-ayuda-ti). El desarrollo se organizó en la rama `desarrollo-ejercicio`; sus avances se guardaron en commits separados y, al terminar, se integraron en `main`.
 
-Para revisar el historial local:
+El historial muestra los avances del proyecto:
+
+1. `chore: crear la base Maven y configurar compilacion para Java 17`
+2. `feat: implementar tickets, estructuras enlazadas y flujo de atencion por consola`
+3. `test: cubrir operaciones de lista, orden FIFO y LIFO y reglas de tickets`
+4. `docs: explicar arquitectura, menu, reglas del flujo y ejecucion del sistema`
+5. `docs: agregar caratula academica y datos de la actividad al README`
+6. `docs: documentar las clases y operaciones publicas con Javadoc en espanol`
+Para consultar el historial de cambios y sus integraciones:
 
 ```powershell
-git log --oneline --decorate --all
+git log --oneline --graph --decorate --all
 ```
 
-Para publicar el repositorio, crea en GitHub un repositorio **público y vacío** llamado `mesa-ayuda-ti` y conecta su URL como `origin` (no reutilices el remoto de otro proyecto):
+El flujo de trabajo para publicar nuevos avances en la rama de desarrollo e integrarlos en la rama principal es:
 
 ```powershell
-git remote add origin https://github.com/TU-USUARIO/mesa-ayuda-ti.git
-git push -u origin desarrollo-ejercicio
-```
+git switch desarrollo-ejercicio
+git pull --ff-only origin desarrollo-ejercicio
+git status
+git add <archivos-modificados>
+git commit -m "tipo: describir el cambio realizado"
+git push origin desarrollo-ejercicio
 
-Para integrar y publicar la entrega final:
-
-```powershell
 git switch main
-git merge desarrollo-ejercicio
+git pull --ff-only origin main
+git merge --no-ff desarrollo-ejercicio
 git push origin main
 ```
 
-GitHub requiere iniciar sesión con la cuenta del estudiante. La URL del video de sustentación se agregará cuando esté disponible.
+La rama `main` contiene la versión integrada y publicada del ejercicio. La URL del video de sustentación se agregará cuando esté disponible.
