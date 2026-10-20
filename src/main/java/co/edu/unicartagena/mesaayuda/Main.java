@@ -2,10 +2,16 @@ package co.edu.unicartagena.mesaayuda;
 
 import java.util.Scanner;
 
+/** Punto de entrada y presentación interactiva del sistema de tickets por consola. */
 public class Main {
     private final Scanner entrada = new Scanner(System.in);
     private final SistemaDelCaso sistema = new SistemaDelCaso();
 
+    /**
+     * Inicia la aplicación de consola.
+     *
+     * @param args argumentos de línea de comandos; no se utilizan
+     */
     public static void main(String[] args) {
         new Main().ejecutar();
     }
